@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 5, Time elapsed: 123.136 s <<< FAILURE! - in TestSuite
+setUp(ca.spinco.SpincoSignUpPageTest)  Time elapsed: 119.39 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to start.
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'ESRPA', ip: '192.168.0.131', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_211'
+Driver info: driver.version: ChromeDriver
+	at ca.spinco.SpincoSignUpPageTest.setUp(SpincoSignUpPageTest.java:45)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:2502/status] to be available after 20001 ms
+	at ca.spinco.SpincoSignUpPageTest.setUp(SpincoSignUpPageTest.java:45)
+Caused by: java.util.concurrent.TimeoutException
+	at ca.spinco.SpincoSignUpPageTest.setUp(SpincoSignUpPageTest.java:45)
+

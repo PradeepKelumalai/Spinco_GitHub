@@ -1,0 +1,90 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>ca</groupId>
+  <artifactId>spinco</artifactId>
+  <version>version-1.0</version>
+  <packaging>jar</packaging>
+
+  <name>spinco</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <jre.level>1.8</jre.level>
+	<jdk.level>1.8</jdk.level>
+  </properties>
+  
+    <build>
+		<plugins>
+			<!-- Compiler plug-in -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${jdk.level}</source>
+					<target>${jdk.level}</target>
+				</configuration>
+			</plugin>
+			<!-- Below plug-in is used to execute tests -->
+			<plugin>
+			    <groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-surefire-plugin</artifactId>
+			    <version>3.0.0-M3</version>
+			    <configuration>
+					<suiteXmlFiles>
+						<!-- TestNG input from terminal  -->
+						<!-- suiteXmlFile>${suiteXmlFile}</suiteXmlFile-->
+						<!-- TestNG suite XML files -->
+						<suiteXmlFile>spinco_signup_page_test.xml</suiteXmlFile>
+						<!-- suiteXmlFile>spinco_signup_page_browserstack_test.xml</suiteXmlFile-->
+						<!-- suiteXmlFile>spinco_signup_page_saucelab_test.xml</suiteXmlFile-->
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+  <dependencies>
+  
+	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+	<dependency>
+	    <groupId>org.seleniumhq.selenium</groupId>
+	    <artifactId>selenium-java</artifactId>
+	    <version>3.141.5</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+	<dependency>
+	    <groupId>org.testng</groupId>
+	    <artifactId>testng</artifactId>
+	    <version>6.14.3</version>
+	    <scope>test</scope>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+	<dependency>
+	    <groupId>io.github.bonigarcia</groupId>
+	    <artifactId>webdrivermanager</artifactId>
+	    <version>3.3.0</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+	<dependency>
+	    <groupId>org.slf4j</groupId>
+	    <artifactId>slf4j-simple</artifactId>
+	    <version>1.7.28</version>
+	    <scope>test</scope>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
+	<dependency>
+	    <groupId>io.qameta.allure</groupId>
+	    <artifactId>allure-testng</artifactId>
+	    <version>2.7.0</version>
+	</dependency>
+	
+	
+  </dependencies>
+</project>
