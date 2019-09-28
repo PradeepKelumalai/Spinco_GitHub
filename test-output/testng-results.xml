@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="51517" started-at="2019-09-15T13:04:41Z" finished-at="2019-09-15T13:05:33Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="51517" started-at="2019-09-15T13:04:41Z" finished-at="2019-09-15T13:05:33Z">
+      <class name="ca.spinco.SpincoSignUpPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ca.spinco.SpincoSignUpPageTest@c038203]" name="setUp" is-config="true" duration-ms="41306" started-at="2019-09-15T13:04:41Z" finished-at="2019-09-15T13:05:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="landingpageVerification()[pri:1, instance:ca.spinco.SpincoSignUpPageTest@c038203]" name="landingpageVerification" duration-ms="4130" started-at="2019-09-15T13:05:22Z" finished-at="2019-09-15T13:05:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- landingpageVerification -->
+        <test-method status="PASS" signature="login_RegisterPageVerification()[pri:2, instance:ca.spinco.SpincoSignUpPageTest@c038203]" name="login_RegisterPageVerification" duration-ms="945" started-at="2019-09-15T13:05:27Z" depends-on-methods="ca.spinco.SpincoSignUpPageTest.landingpageVerification" finished-at="2019-09-15T13:05:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_RegisterPageVerification -->
+        <test-method status="PASS" signature="signUp()[pri:3, instance:ca.spinco.SpincoSignUpPageTest@c038203]" name="signUp" duration-ms="3638" started-at="2019-09-15T13:05:28Z" depends-on-methods="ca.spinco.SpincoSignUpPageTest.login_RegisterPageVerification" finished-at="2019-09-15T13:05:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp -->
+        <test-method status="PASS" signature="signIn()[pri:4, instance:ca.spinco.SpincoSignUpPageTest@c038203]" name="signIn" duration-ms="1379" started-at="2019-09-15T13:05:31Z" depends-on-methods="ca.spinco.SpincoSignUpPageTest.signUp" finished-at="2019-09-15T13:05:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ca.spinco.SpincoSignUpPageTest@c038203]" name="tearDown" is-config="true" duration-ms="50" started-at="2019-09-15T13:05:33Z" finished-at="2019-09-15T13:05:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ca.spinco.SpincoSignUpPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
